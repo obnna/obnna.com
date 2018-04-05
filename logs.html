@@ -111,7 +111,7 @@
 			 3. Oracle Virtual Box
 
 			 Vagrant is a useful tool that allows running a virtual machine through windows command prompt. 
-			 It is ightweight, and can run for hours without little to no impact on PC performance.
+			 It is lightweight, and can run for hours without little to no impact on PC performance.
 			  I used vagrant 1.9.5 for Windows .</p>
 
              <p>Get oracle virtual box, which is needed for vagrant to work.
@@ -134,15 +134,11 @@
 			After vagrant has installed the VM, you will need to login using the command "vagrant ssh"
 			 To access shared directory, cd to /vagrant.</p>
 
-            <p>At this point, use ls (list) to confirm you have folders named newsdata,
+            <p>Use ls (list) to confirm you have folders named newsdata,
 				 forum and tournaments. For the entirety of this project, you will use the newsdata folder.
 				
 			Due to Github's max file size of 100mb, I intentionally left out the newsdata.sql,
-			 which you will have to download and place in the newsdata folder. Here is a link to the file
-			  --https://goo.gl/ OtdXKS After moving the downloaded files to the newsdata folder, 
-			  navigate to that folder using in your VM and type "psql -d news -f newsdata.sql".
-			   This will load the data into the database. </p>
-
+			 which you will have to download and place in the newsdata folder. 
 
              <p>This project connects to a database in a virtual machine, and utilize complex SQL queries to analyze log data from a huge database, then print out answers to pressing customer questions. </p>
 
